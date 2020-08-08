@@ -8,7 +8,7 @@ $DisplayName = "PowerShell Team Type Class"
 
 # Descripción es opcional en la creación del Team (ahora mismo será igual al título)
 $Description = $DisplayName
-$MailNickname = "PowerShellTeamTypeClass"
+$Alias = "PowerShellTeamTypeClass"
 $Template = "EDU_Class"
 
 # Dueños del Team
@@ -18,7 +18,7 @@ $Owner = "prueba@domain.com"
 $CoOwners = @('prueba1@domain.com', 'prueba2@domain.com')
 $Students = @('estudiante1@dominio.com', 'estudiante2@domain.com')
 
-$new_team_id = ( New-Team -DisplayName $DisplayName -Description $Description -Owner $Owner -Alias $MailNickname -Template $Template )
+$new_team_id = ( New-Team -DisplayName $DisplayName -Description $Description -Owner $Owner -Alias $Alias -Template $Template )
 
 for ($i = 0; $i -lt $CoOwners.count; $i++)
 {
