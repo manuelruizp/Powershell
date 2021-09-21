@@ -5,7 +5,8 @@ $account = Get-Credential
 Connect-MsolService -Credential $account
 Connect-AzureAD -Credential $account
 
-$Students = @('albert.cruz@est.cbc.edu.do', 'edward.gil@est.cbc.edu.do', 'hamlet.fernandez@est.cbc.edu.do', 'hannah.cruz@est.cbc.edu.do', 'sarah.fernandez@est.cbc.edu.do', 'weldris.gil@est.cbc.edu.do')
+# Email de estudiantes dividido por comma
+$Students = @()
 
 for ($i = 0; $i -lt $Students.count; $i++)
 {
