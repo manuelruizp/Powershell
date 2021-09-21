@@ -9,13 +9,13 @@ $sheet = $excel.Workbooks.Open("D:\Dropbox\CBC\Microsoft Teams\excel\reset.xlsx"
 
 $startRow = 2
 $lastRow = 64
-$user = 'm.ruiz@cbc.edu.do'
+$user = 'prueba@cbc.edu.do'
 
 for ($i = $startRow; $i -le $lastRow; $i++) {
     if ($sheet.Cells.Item($i, 1).Text -ne '') {
         $groupId = $sheet.Cells.Item($i, 1).Text
         
-        Write-Output "Agregando manualmente a Manuel Ruiz a: $($groupId)"
+        Write-Output "Agregando manualmente a: $($groupId)"
 
         Add-TeamUser -GroupId $groupId -User $user -Role Member
         Add-TeamUser -GroupId $GroupId -User $user -Role Owner

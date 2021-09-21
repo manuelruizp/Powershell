@@ -10,12 +10,13 @@ $Alias = "CapillaPrimaria"
 $Template = "EDU_Class"
 
 # Dueños del Team
-$Owner = "teamsmgr@cbc.edu.do"
+$Owner = "dueno@cbc.edu.do"
 
 # Arreglos para asistentes del profesor y los estudiantes
-$CoOwners = @('s.peralta@cbc.edu.do', 'j.brito@cbc.edu.do')
+$CoOwners = @()
 
-$Students = @('ana.amiama@est.cbc.edu.do')
+# Arreglo de estudiantes dividido por comma
+$Students = @()
 
 $new_team_id = ( New-Team -DisplayName $DisplayName -Description $Description -Owner $Owner -Alias $Alias -Template $Template )
 
